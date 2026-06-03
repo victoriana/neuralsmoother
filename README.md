@@ -1,33 +1,20 @@
-# reacoaxer
+# neuralsmoother
 
-**A real-time extension for Reaper (Digital Audio Workstation by Cockos Incorporated) that analyzes live audio stems and generates musician-friendly performance cues.**
+**A Python utility for mitigating agentic AI pipeline drift and data degradation using neural smoothing techniques.**
 
-Designed for live performers, `reacoaxer` "coaxes" optimal performance from WAV stems through adaptive, low-latency feedback.
+As highlighted in **Gartner's** 2026 predictions, over 40% of agentic AI projects face failure due to governance gaps and data inconsistency. `neuralsmoother` addresses **agent drift** by applying neural network-based regularization to stabilize agent outputs, ensuring consistent decision-making even when input data distributions shift.
 
-## ✨ Features
-- **Real-Time Analysis**: Monitors live stems with low-latency Lua scripting.
-- **Actionable Cues**: Translates audio data into visual or OSC prompts.
-- **Adaptive Feedback**: Adjusts suggestions based on performance context.
-- **Workshop Ready**: Ideal for stage shows and interactive installations.
+## Features
+- **Drift Detection**: Identifies covariate, concept, and label drift in real-time agent pipelines.
+- **Neural Smoothing**: Applies adaptive smoothing algorithms to reduce output volatility and "wheel-spin" in agentic loops.
+- **Context Stabilization**: Unifies fragmented state data to prevent agents from acting on stale or conflicting information.
+- **Pipeline Agnostic**: Compatible with major agent frameworks (LangChain, AutoGen, CrewAI) and custom Python stacks.
 
-## 🚀 Installation
-1. Download the `.lua` script from the [Releases](../../releases) tab.
-2. Place it in your Reaper Scripts folder:
-   - **Win**: `%APPDATA%\REAPER\Scripts\`
-   - **Mac**: `~/Library/Application Support/REAPER/Scripts\`
-   - **Lin**: `~/.config/REAPER\Scripts\`
-3. Restart Reaper or select **Actions > Reload extension scripts**.
-
-## 🎮 Usage
-1. Load live WAV stems into tracks.
-2. Run action: **`reacoaxer: Start live stem coaxing`**.
-3. Follow on-screen cues or OSC output.
-4. Adjust sensitivity via **`reacoaxer: Settings`**.
-
-## 🛠 Development
-Built with **Lua** (Reaper API v6.0+).
-
-To download the source code:
+## Installation
 ```bash
-git clone https://github.com/spunkshadows/reacoaxer.git
+pip install neuralsmoother
+# Or clone for development:
+git clone https://github.com/victoriana/neuralsmoother.git
+cd neuralsmoother
+pip install -e .
 ```
