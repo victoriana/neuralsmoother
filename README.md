@@ -1,8 +1,8 @@
-# neuralsmooth
+# neuralsmoother
 
 **A Python utility for mitigating agentic AI pipeline drift and data degradation using neural smoothing techniques.**
 
-As highlighted in **Gartner's** 2026 predictions, over 40% of agentic AI projects face failure due to governance gaps and data inconsistency. `neuralsmooth` addresses **agent drift** by applying neural network-based regularization to stabilize agent outputs, ensuring consistent decision-making even when input data distributions shift.
+As highlighted in **Gartner's** 2026 predictions, over 40% of agentic AI projects face failure due to governance gaps and data inconsistency. `neuralsmoother` addresses **agent drift** by applying neural network-based regularization to stabilize agent outputs, ensuring consistent decision-making even when input data distributions shift.
 
 ## Features
 - **Drift Detection**: Identifies covariate, concept, and label drift in real-time agent pipelines.
@@ -12,9 +12,9 @@ As highlighted in **Gartner's** 2026 predictions, over 40% of agentic AI project
 
 ## Installation
 ```bash
-pip install neuralsmooth
+pip install neuralsmoother
 # Or clone for development:
-git clone https://github.com/victoriana/neuralsmooth.git
-cd neuralsmooth
+git clone https://github.com/victoriana/neuralsmoother.git
+cd neuralsmoother
 pip install -e .
 ```
